@@ -1,0 +1,38 @@
+<footer class="footer">
+  <!-- Wave decorativa -->
+  <div class="footer-wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,30 C360,60 1080,0 1440,30 L1440,0 L0,0 Z" fill="currentColor"/>
+    </svg>
+  </div>
+
+  <div class="footer-body">
+    <div class="footer-inner">
+
+      <!-- Coluna brand -->
+      <div class="footer-brand">
+        <a class="footer-logo" routerLink="/">
+          <span class="logo-heart"></span>
+          <span>Novo<strong>Lar</strong></span>
+        </a>
+        <p class="footer-tagline">
+          Ajudando as pessoas e formando novas familias para a sua felicidade!
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="footer-bottom">
+    <div class="footer-inner footer-bottom-inner">
+      <p class="footer-copy">
+        © {{ currentYear }} NovoLar. Ajudando a ter novas familias!
+      </p>
+      <div class="footer-legal">
+        <a *ngFor="let l of links.legal" [routerLink]="l.route" class="footer-legal-link">
+          {{ l.label }}
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>

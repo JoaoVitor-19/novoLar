@@ -1,0 +1,21 @@
+<div class="content">
+  <!-- Hero -->
+  <p class="subtitle">Ajude-os a ter um lar!<br><h2>Conto com voçê!</h2></p>
+
+  <a routerLink="/selecao" class="btn-green">Quero doar!</a>
+
+  <div class="pet-grid">
+    <div *ngFor="let pet of recentPets" class="pet-card">
+      <img [src]="pet.img" [alt]="pet.name" class="pet-img"/>
+      <div class="pet-body">
+        <p class="pet-name">{{ pet.name }}</p>
+        <p class="pet-meta">Raça: Rua</p>
+        <p class="pet-meta">Descrição: {{ pet.breed }}</p>
+        <p class="pet-meta">Idade: {{ pet.age }} anos</p>
+        <div class="pet-actions">
+          <button class="btn-adopt">Adotar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

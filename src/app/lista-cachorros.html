@@ -1,0 +1,33 @@
+<div class="page-mobile">
+  <div class="search-bar">
+    <input type="text" placeholder="Digite aqui" class="search-input" />
+  </div>
+
+  <div class="page-content">
+    <div class="list-header">
+      <h2 class="list-title">Cachorros</h2>
+      <button class="btn-filter">☰ Filtros (1) ∨</button>
+    </div>
+
+    <div class="pet-grid">
+      <div *ngFor="let pet of pets" class="pet-card">
+        <img [src]="pet.img" [alt]="pet.name" class="pet-img" />
+        <div class="pet-body">
+          <p class="pet-name">{{ pet.name }}</p>
+          <p class="pet-meta">Raça: {{ pet.breed }}</p>
+          <p class="pet-meta">☆ {{ pet.age }} anos</p>
+          <div class="pet-actions">
+            <button class="btn-adopt">Adotar</button>
+            <button class="btn-fav">♡</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="bottom-nav">
+    <a routerLink="/" class="nav-icon">🔔</a>
+    <a routerLink="/" class="nav-icon active">🏠</a>
+    <a routerLink="/selecao" class="nav-icon">👤</a>
+  </nav>
+</div>

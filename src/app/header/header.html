@@ -1,0 +1,49 @@
+<header class="header" [class.scrolled]="false">
+  <div class="header-inner">
+
+    <!-- Logo -->
+    <a class="logo" routerLink="/" (click)="closeMenu()">
+      <span class="logo-text">Novo<strong>Lar</strong></span>
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav class="nav-desktop" aria-label="Navegação principal">
+      <a
+        *ngFor="let item of navItems"
+        [routerLink]="item.route"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: item.route === '/' }"
+        class="nav-link"
+      >
+        {{ item.label }}
+      </a>
+    </nav>
+
+    <button
+      class="hamburger"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" [class.open]="menuOpen">
+    <nav aria-label="Navegação mobile">
+      <a
+        *ngFor="let item of navItems"
+        [routerLink]="item.route"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: item.route === '/' }"
+        class="mobile-nav-link"
+        (click)="closeMenu()"
+      >
+        {{ item.label }}
+      </a>
+    </nav>
+    <a class="btn-doe mobile-doe" routerLink="/campanhas" (click)="closeMenu()">
+      <span class="btn-doe-icon">♡</span> Doe Agora
+    </a>
+  </div>
+</header>

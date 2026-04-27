@@ -1,0 +1,85 @@
+:host { display: block; }
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #fff;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* Header */
+.header {
+  padding: 14px 16px 10px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+.logo { font-size: 1.5rem; font-weight: 900; color: #222; }
+
+/* Content */
+.content { flex: 1; padding: 16px 16px 8px; display: flex; flex-direction: column; gap: 12px; }
+
+.subtitle { font-size: 0.93rem; color: #555; line-height: 1.5; }
+
+.section-label { font-size: 0.82rem; font-weight: 700; color: #333; }
+
+/* Categories */
+.categories { display: flex; gap: 10px; }
+.cat-btn {
+  width: 50px; height: 50px;
+  border: 1.5px solid #ccc;
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.3rem;
+  background: #fafafa;
+  text-decoration: none;
+  transition: border-color 0.2s;
+}
+.cat-btn:hover { border-color: #4a9e4a; }
+
+/* Button */
+.btn-green {
+  display: block; text-align: center;
+  padding: 13px;
+  background: #212521; color: #fff;
+  font-weight: 800; font-size: 0.95rem;
+  border-radius: 9px; text-decoration: none;
+  transition: background 0.2s;
+}   
+
+/* Pet grid */
+.pet-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+
+.pet-card { border: 1px solid #e0e0e0; border-radius: 10px; overflow: hidden; }
+
+.pet-img { width: 100%; height: 105px; object-fit: cover; display: block; }
+
+.pet-body { padding: 8px 9px 9px; }
+
+.pet-name { font-weight: 800; font-size: 0.85rem; color: #222; }
+.pet-meta { font-size: 0.76rem; color: #777; line-height: 1.4; }
+
+.pet-actions { display: flex; gap: 6px; margin-top: 7px; align-items: center; }
+
+.btn-adopt {
+  flex: 1; padding: 5px 0;
+  background: #2c332c; color: #fff;
+  font-size: 0.78rem; font-weight: 700;
+  border-radius: 5px; border: none; cursor: pointer;
+}
+.btn-fav {
+  width: 26px; height: 26px;
+  border: 1px solid #ddd; border-radius: 5px;
+  background: #fff; font-size: 0.85rem; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+}
+.btn-fav:hover { color: #e05555; border-color: #e05555; }
+
+/* Bottom Nav */
+.bottom-nav {
+  display: flex; justify-content: space-around; align-items: center;
+  padding: 10px 0 14px;
+  border-top: 1px solid #eee;
+}
+.nav-icon { font-size: 1.2rem; color: #aaa; text-decoration: none; padding: 4px 16px; }
+.nav-icon.active { color: #4a9e4a; }

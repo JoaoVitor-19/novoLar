@@ -1,0 +1,13 @@
+.page-mobile { max-width: 430px; margin: 0 auto; min-height: 100vh; display: flex; flex-direction: column; background: #fff; }
+.page-header { text-align: center; padding: 32px 16px 16px; }
+.logo-text { font-size: 1.6rem; font-weight: 700; color: #222; }
+.page-content { flex: 1; padding: 16px 24px; display: flex; flex-direction: column; gap: 16px; }
+.section-title { font-size: 1rem; font-weight: 600; color: #333; margin-bottom: 8px; }
+.form-group { display: flex; flex-direction: column; gap: 6px; }
+.form-label { font-size: 0.85rem; color: #555; }
+.form-input { border: 1px solid #ccc; border-radius: 6px; padding: 10px 12px; font-size: 0.9rem; outline: none; }
+.form-input:focus { border-color: #4CAF50; }
+.btn-outline { display: block; text-align: center; border: 1px solid #4CAF50; color: #4CAF50; border-radius: 8px; padding: 12px; text-decoration: none; font-weight: 600; }
+.btn-green { display: block; text-align: center; background: #4CAF50; color: #fff; border-radius: 8px; padding: 12px; text-decoration: none; font-weight: 600; }
+.bottom-nav { display: flex; justify-content: space-around; padding: 12px; border-top: 1px solid #eee; }
+.nav-icon { font-size: 1.2rem; text-decoration: none; }
